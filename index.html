@@ -7,7 +7,7 @@
     <meta name="keywords" content="YMSAT 2026, Math, Science, STEM Festival" />
     <meta name="author" content="RV Canseco / AL Mendoza" />
     <meta http-equiv="refresh" content="3600">
-    <title>2Q YMSAT 2026</title>
+    <title>YMSAT 2026</title>
     <link rel="icon" href="./assets/pshslogo.png" sizes="32x32" type="image/png" />
     <style>
         body {
@@ -19,13 +19,24 @@
             width: 100%;
             height: 100vh;
             border: none;
-            overflow: auto;
-            scrollbar-width: none; /* Firefox */
-            -ms-overflow-style: none; /* Internet Explorer 10+ */
         }
+        .scroll-area::-webkit-scrollbar {
+          width: 12px;
+        }
+        
+        .scroll-area::-webkit-scrollbar-track {
+          background: black;
+        }
+        
+        .scroll-area::-webkit-scrollbar-thumb {
+          background-color: black;
+          border-radius: 6px;
+          border: 3px solid #f0f0f0;
+        }
+
     </style>
 </head>
 <body>
-    <iframe src="https://d125063a-1570-4424-b366-5211c0d185e2-00-3p68wj7x2mtt1.kirk.replit.dev/" width="100%" >
+    <iframe class="scroll-area" src="https://d125063a-1570-4424-b366-5211c0d185e2-00-3p68wj7x2mtt1.kirk.replit.dev/" width="100%" >
     </iframe>
 </body>
