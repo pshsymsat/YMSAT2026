@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect Indicator</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      flex-direction: column 
+    }
+
+    .loading {
+      display: flex;
+      gap: 8px;
+      flex-direction: row;
+    }
+    
+    h3 {
+      color: #3498db;
+      margin-bottom: 30px;
+     }
+
+    .dot {
+      width: 20px;
+      height: 20px;
+      background: navy;
+      border-radius: 50%;
+      animation: bounce 0.6s infinite alternate;
+    }
+
+    .dot:nth-child(2) {
+      background: gold;
+      animation-delay: 0.2s;
+    }
+
+    .dot:nth-child(3) {
+       background: maroon;
+      animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+   <h3> YMSAT 2026: CodeTheFuture </h3>
+  <div class="loading">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <script>
+    // Redirect after 3 seconds
+    setTimeout(() => {
+      window.location.href = "https://example.com"; 
+    }, 3000);
+  </script>
+</body>
+</html>
